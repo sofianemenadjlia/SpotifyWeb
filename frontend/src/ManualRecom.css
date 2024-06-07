@@ -1,0 +1,144 @@
+.ManualRecom-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ManualRecom-main h2 {
+    font-size: 200%;
+    margin-bottom: 10%;
+}
+
+.ManualRecom-main div {
+    margin-top: 5%;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding-top: 2%; 
+    padding-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.ManualRecom-main div:hover {
+    border: 2px solid var(--primary-color);
+    box-shadow: 1px 1px 1px var(--text-color), -1px -1px 1px var(--text-color);
+    cursor: pointer;
+}
+
+.ManualRecom-main Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.ManualRecom-main Form input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    padding: 2%;
+    margin: 7.5%;
+    text-align: center;
+}
+
+.ManualRecom-main Form input:hover {
+    border: 2px solid var(--primary-color);
+    box-shadow: 1px 1px 1px var(--text-color), -1px -1px 1px var(--text-color);
+    cursor: pointer;
+}
+
+.ManualRecom-main Form select {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    padding: 5%;
+    margin: 7.5%;
+    text-align: center;
+}
+
+.ManualRecom-main Form select:hover {
+    border: 2px solid var(--primary-color);
+    box-shadow: 1px 1px 1px var(--text-color), -1px -1px 1px var(--text-color);
+    cursor: pointer;
+}
+
+.ManualRecom-main Form select#genres option:hover {
+    background-color: var(--primary-color);
+}
+
+.ManualRecom-main Form select#genres option:checked {
+    background-color: var(--primary-color);
+}
+
+.ManualRecom-main Form select#genres option::before {
+    content: "\2610";
+    margin-right: 2%;
+}
+
+.ManualRecom-main Form select#genres option:checked::before {
+    content: "\2611";
+    margin-right: 2%;
+}
+
+.ManualRecom-main Form select#market {
+    padding: 2%;
+}
+
+.ManualRecom-main .form button {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+    padding: 5%;
+    margin: 7.5%;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.ManualRecom-main .form button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.ManualRecom-main .results div {
+    margin-top: 4%;
+    padding: 5%;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ManualRecom-main .results div img {
+    width: 100%;
+    max-width: 200px; /* Ajustez la largeur maximale selon vos besoins */
+    height: auto;
+    border-radius: 5px;
+    margin-top: 2%;
+}
+
+.ManualRecom-main .results div p {
+    margin: 1% 0;
+    font-size: 110%;
+    text-align: center;
+}
+
+.ManualRecom-main .results div button {
+    width: 50%;
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+    padding: 3%;
+    margin-top: 7.5%;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.ManualRecom-main .results div button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+

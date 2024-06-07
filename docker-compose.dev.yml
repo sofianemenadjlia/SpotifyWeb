@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/
+      - MONGO_DB=SPOTIFY
+    volumes:
+      - ./backend/src:/app/src
+    depends_on:
+      - mongodb
+    ports:
+      - 4000:80
+
+  mongodb:
+    image: mongo
+    environment:
+      - MONGO_INITDB_DATABASE=SPOTIFY
+    volumes:
+      - mongodb_data:/data/db
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/
+      - MONGO_DB=SPOTIFY
+    volumes:
+      - ./frontend/src:/app/src
+    depends_on:
+      - mongodb
+    ports:
+      - 8090:80
+
+  redis:
+    image: redis:latest
+    volumes:
+      - redis-data:/data
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+    command: [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
+
+  reverseproxy:
+    restart: always
+    build:
+      context: ./reverse-proxy/
+      dockerfile: ./Dockerfile.dev
+    depends_on:
+      - backend
+      - frontend
+    volumes:
+      - ./reverse-proxy/log:/var/log/nginx
+    ports:
+    - 8087:80
+    
+
+volumes:
+  mongodb_data:
+  redis-data:

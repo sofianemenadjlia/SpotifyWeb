@@ -1,0 +1,60 @@
+.Release-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.releases h2 {
+    font-size: 200%;
+    margin-bottom: 5%;
+}
+
+.releases .albums-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    gap: 5%;
+}
+
+.album-item {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 5%;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.album-item:hover {
+    border: 2px solid var(--primary-color);
+    box-shadow: 1px 1px 1px var(--text-color), -1px -1px 1px var(--text-color);
+    cursor: pointer;
+}
+
+.album-item img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.album-item h3 {
+    margin-top: 2%;
+}
+
+.album-item p {
+    margin-top: 2%;
+}
+
+.album-item a {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 2%;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.album-item a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}

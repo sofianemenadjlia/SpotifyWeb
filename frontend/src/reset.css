@@ -1,0 +1,78 @@
+/* Reset some default styles */
+
+/* Box sizing border-box for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove margin and padding for most elements */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+dl,
+figure,
+blockquote,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default font size and line height */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Remove list styles (bullet points) */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default styles for hyperlinks */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default styles for buttons */
+button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+
+/* Remove default styles for form elements */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Additional styles to normalize form elements */
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+/* Normalize heading elements */
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+
+/* Remove outline from focused elements */
+:focus {
+  outline: none;
+}

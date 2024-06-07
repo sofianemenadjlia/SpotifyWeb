@@ -1,0 +1,65 @@
+.Signup-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Signup-main Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.Signup-main h2 {
+    margin-top: 5%;
+    font-size: 200%;
+}
+
+.Signup-main input {
+    width: 175%;
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+    padding: 5%;
+    margin: 7.5%;
+    text-align: center;
+}
+
+.Signup-main input:hover {
+    border: 4px solid var(--primary-color);
+    box-shadow: 2px 2px 2px var(--text-color), -2px -2px 2px var(--text-color);
+    cursor: pointer;
+}
+
+.Signup-main .form button {
+    width: 175%;
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+    padding: 5%;
+    margin: 7.5%;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.Signup-main .form button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.Signup-main .form .icon {
+    margin-left: 1%;
+} 
+
+.Signup-main .login-link {
+    color: var(--text-color);
+    font-weight: bold;
+    text-decoration: underline var(--primary-color);
+}
+
+.Signup-main .login-link:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: underline var(--text-color);
+}

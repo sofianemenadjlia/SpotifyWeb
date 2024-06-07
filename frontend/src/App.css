@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+}
+
+.App-main {
+  padding: 2%;
+  background-color: var(--secondary-color);
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 5%;
+}
+
+.card {
+  border: 1px solid var(--primary-color);
+  border-radius: 2%;
+  padding: 2%;
+  margin: 1%;
+}
+
+.card:hover {
+  border: 1px solid var(--text-color);
+  box-shadow: 5px 2px 2px var(--primary-color), -5px -2px 2px var(--primary-color);
+}
+
+.card h2 {
+  margin-bottom: 4%;
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 2%;
+}
+
+.card a {
+  text-decoration: underline;
+}
+
+.card a:hover {
+  color: var(--primary-color);
+}

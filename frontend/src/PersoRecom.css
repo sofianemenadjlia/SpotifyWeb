@@ -1,0 +1,71 @@
+.PersoRecom-main div.results{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.PersoRecom-main h2 {
+    font-size: 200%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.PersoRecom-main div.tracks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.PersoRecom-main div.track {
+    margin-top: 5%;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 2%;
+    flex: 1 1 100%;
+    max-width: 70%;
+}
+
+.PersoRecom-main div.track:hover {
+    border: 2px solid var(--primary-color);
+    box-shadow: 1px 1px 1px var(--text-color), -1px -1px 1px var(--text-color);
+    cursor: pointer;
+}
+
+.PersoRecom-main .track img {
+    width: 20%;   
+    height: auto;
+    border-radius: 5px;
+    margin-top: 2%;
+}
+
+.PersoRecom-main .track {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PersoRecom-main .track p {
+    margin: 1% 0;
+    font-size: 120%;
+    text-align: center;
+}
+
+.PersoRecom-main .track button {
+    width: 25%;
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+    padding: 2%;
+    margin-top: 5%;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.PersoRecom-main .track button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}

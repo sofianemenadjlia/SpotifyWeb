@@ -1,0 +1,24 @@
+.App-header {
+    background-color: var(--primary-color);
+    padding: 1.5%;
+    color: var(--text-color);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-name {
+    font-size: 150%;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.user-profile {
+    font-size: 120%;
+}
